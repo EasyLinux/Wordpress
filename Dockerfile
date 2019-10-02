@@ -1,5 +1,8 @@
-FROM alpine:3.9
-LABEL author="Serge NOEL <serge.noel@easylinux.fr>"
+FROM alpine:3.10
+LABEL author="Serge NOEL <serge.noel@easylinux.fr>" \
+      description="Wordpress Alpine linux image" \
+      version="?"
+      app="Wordpress"
 
 RUN apk add apache2 php7-apache2 php7-mysqli \
     && mkdir /var/www/html \
